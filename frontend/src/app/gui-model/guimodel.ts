@@ -3,7 +3,7 @@ export class GuiModel {
 
     private _guiModel = {
         "application": {
-            "title": "DevOpsDemo FS2024",
+            "title": "DevOpsDemo FS2024 - Mathushan",
             "formList": [
                 {
                     "id": "OwnUserForm",
@@ -107,6 +107,15 @@ export class GuiModel {
                             "width": 2,
                             "newRow": true,
                         },
+                        {
+                            "type": "button",
+                            "name": { default: "DevOps" },
+                            "icon": "fa-cogs",
+                            "color": "blue",
+                        //  "page": "toDoPage",
+                            "width": 2,
+                            "newRow": true,
+                        }
                     ]
                 },
                 {
@@ -124,7 +133,7 @@ export class GuiModel {
                             "form" : {
                                 "form" : "ToDoForm"
                             }
-                        },
+                        },   
                         {
                             "type": "list",
                             "name": "ToDo",
