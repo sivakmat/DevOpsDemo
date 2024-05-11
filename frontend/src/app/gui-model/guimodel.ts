@@ -87,6 +87,41 @@ export class GuiModel {
                         }
                     ]
                 },
+                {
+                    "id": "DevOpsForm",
+                    "title": { default: "DevOps" },
+                    "url": "/devops",
+                    "formFieldList": [
+                        {
+                            "id":   "title",
+                            "type": "text",
+                            "name": { default: "Titel" },
+                            "required": true,
+                            "width": 2
+                        },
+                        {
+                            "id": "description",
+                            "type": "text",
+                            "name": { default: "Text" },
+                            "newRow": true,
+                            "maxLength": 4000,
+                            "height": 4,
+                            "width": 2
+                        },
+                        {
+                            "type": "deleteButton",
+                            "name": "Delete"
+                        },
+                        {
+                            "type": "cancelButton",
+                            "name": "Cancel"
+                        },
+                        {
+                            "type": "okButton",
+                            "name": "Ok"
+                        }
+                    ]
+                },
             ],
             "pageList": [
                 {
@@ -112,7 +147,7 @@ export class GuiModel {
                             "name": { default: "DevOps" },
                             "icon": "fa-cogs",
                             "color": "blue",
-                        //  "page": "toDoPage",
+                            "page": "DevOps",
                             "width": 2,
                             "newRow": true,
                         }
@@ -143,6 +178,35 @@ export class GuiModel {
                             "url": "/todo",
                             "form": {
                                 "form": "ToDoForm"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "DevOps",
+                    "elementList": [
+                        {
+                            "type": "backbutton",
+                        },
+                        {
+                            "type": "newButton",
+                            "name": { default: "Neues DevOps"},
+                            "icon": "fa-cogs",
+                            "color": "green",
+                            "width": 2,
+                            "form" : {
+                                "form" : "DevOpsForm"
+                            }
+                        },   
+                        {
+                            "type": "list",
+                            "name": "DevOps",
+                            "icon": "fa-cogs",
+                            "color": "blue",
+                            "search": true,
+                            "url": "/devops",
+                            "form": {
+                                "form": "DevOpsForm"
                             }
                         }
                     ]
