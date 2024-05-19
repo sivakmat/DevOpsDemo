@@ -21,7 +21,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class DevOpsController {
 
-    private Map<Integer, DevOps> devopss = new HashMap<Integer, DevOps>();
+    private Map<Integer, DevOps> devopss = new HashMap<>();
 
     @EventListener(ApplicationReadyEvent.class)
     public void init() {
