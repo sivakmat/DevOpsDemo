@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 class FizzBuzzConverterTest {
 
     @Test
-    public void fizzBuzzConverter1() {
+    void fizzBuzzConverter1() {
 
         FizzBuzzConverter fizzBuzz = new FizzBuzzConverter();
         Assertions.assertEquals("1", fizzBuzz.convert(1));
