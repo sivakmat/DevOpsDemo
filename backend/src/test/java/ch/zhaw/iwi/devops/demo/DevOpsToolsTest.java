@@ -9,18 +9,18 @@ public class DevOpsToolsTest {
     private DevOpsTools devOpsTools;
 
     @BeforeEach
-    public void setUp() {
+    void setUp() {
         devOpsTools = new DevOpsTools();
     }
 
     @Test
-    public void testAddTool() {
+    void testAddTool() {
         devOpsTools.addTool("Docker");
         assertTrue(devOpsTools.containsTool("Docker"));
     }
 
     @Test
-    public void testGetTools() {
+    void testGetTools() {
         devOpsTools.addTool("Docker");
         devOpsTools.addTool("Kubernetes");
         assertEquals(2, devOpsTools.getTools().size());
@@ -29,7 +29,7 @@ public class DevOpsToolsTest {
     }
 
     @Test
-    public void testContainsTool() {
+    void testContainsTool() {
         devOpsTools.addTool("Jenkins");
         assertTrue(devOpsTools.containsTool("Jenkins"));
         assertFalse(devOpsTools.containsTool("Ansible"));
