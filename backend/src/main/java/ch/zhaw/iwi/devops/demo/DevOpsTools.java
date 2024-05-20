@@ -1,9 +1,7 @@
-package main.java.ch.zhaw.iwi.devops.demo;
+package ch.zhaw.iwi.devops.demo;
 
 import java.util.ArrayList;
 import java.util.List;
-import ch.zhaw.iwi.devops.demo.DevOpsTools;
-
 
 public class DevOpsTools {
 
