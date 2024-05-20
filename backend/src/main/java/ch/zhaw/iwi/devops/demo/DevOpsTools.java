@@ -22,4 +22,12 @@ public class DevOpsTools {
     public boolean containsTool(String tool) {
         return tools.contains(tool);
     }
+
+    public void removeTool(String tool) {
+        tools.remove(tool);
+    }
+
+    public int getToolCount() {
+        return tools.size();
+    }
 }
