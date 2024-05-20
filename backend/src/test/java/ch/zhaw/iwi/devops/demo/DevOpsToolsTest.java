@@ -36,4 +36,18 @@ class DevOpsToolsTest {
         assertTrue(devOpsTools.containsTool("Jenkins"));
         assertFalse(devOpsTools.containsTool("Ansible"));
     }
+
+    @Test
+    void testRemoveTool() {
+        devOpsTools.addTool("Jenkins");
+        devOpsTools.removeTool("Jenkins");
+        assertFalse(devOpsTools.containsTool("Jenkins"));
+    }
+
+    @Test
+    void testGetToolCount() {
+        devOpsTools.addTool("Docker");
+        devOpsTools.addTool("Kubernetes");
+        assertEquals(2, devOpsTools.getToolCount());
+    }
 }
