@@ -3,6 +3,8 @@ package test.java.ch.zhaw.iwi.devops.demo;
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import ch.zhaw.iwi.devops.demo.DevOpsTools;
+
 
 class DevOpsToolsTest {
 
