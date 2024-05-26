@@ -44,10 +44,10 @@ class DevOpsToolsTest {
         assertFalse(devOpsTools.containsTool("Jenkins"));
     }
 
-    /*@Test
+    @Test
     void testGetToolCount() {
         devOpsTools.addTool("Docker");
         devOpsTools.addTool("Kubernetes");
         assertEquals(2, devOpsTools.getToolCount());
-    } */
+    }
 }
