@@ -202,7 +202,7 @@ export class GuiModel {
                             "type": "list",
                             "name": "DevOps",
                             "icon": "fa-cogs",
-                            "color": "red",
+                            "color": "blue",
                             "search": true,
                             "url": "/devops",
                             "form": {
