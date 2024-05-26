@@ -146,7 +146,7 @@ export class GuiModel {
                             "type": "button",
                             "name": { default: "DevOps" },
                             "icon": "fa-cogs",
-                            "color": "red",
+                            "color": "blue",
                             "page": "DevOps",
                             "width": 2,
                             "newRow": true,
